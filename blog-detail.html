@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blog Detail</title>
+</head>
+
+<body>
+    <p><a href="blog.html">Kembali ke Blog</a></p>
+    <hr>
+
+    <img src="assets/images/docker.jpg" width="100%">
+    <table border="0" cellpadding="3" cellspacing="0">
+        <tr>
+            <td>
+                <img src="assets/images/vishnu.jpg" width="32" height="32">
+            </td>
+
+            <td>
+                <b>Vishnu Satheesh</b><br>
+                <span>Posted on May 31</span>
+            </td>
+        </tr>
+    </table>
+    </p>
+
+    <h1>How to Deploy a Web Application Using Docker and NGINX</h1>
+    <p><span>#webdev</span> &nbsp; <span>#devops</span></p>
+    <hr>
+
+    <p>Deploying a web application doesn't need to be complicated. With Docker, NGIINX, and your own server, you can get
+        your app live in no time. In this blog, i'll show you step by step how to serve your app with a domain, route
+        traffic with NGINX, and run it all inside a Docker container. This guide is specifiacally tailored for a
+        linux-based server</p>
+    <b>Step 1 : Setup docker</b>
+    <p>First, let's set up Docker. i'm using a simple React app as an example, but feel free to use any application or
+        codebase of your choice. Create a Dockerfile in your project directory to define how your app should be
+        containerized.</p>
+    <p>Dockerfile:</p>
+    <pre><code>FROM node:20-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm install 
+COPY . . 
+CMD [ "npm", "start" ]</code></pre>
+    <b>Step 2 : Build and Run the Docker Container</b>
+    <p>Once you've created your Dockerfile, the next step is to build and run it to make 
+        sure everything is working as expected.
+    </p>
+    <b>Conclusion</b>
+    <p>Deploying your web application using Docker and NGINX on your own server might sound
+        intimidating at first, but once you break it down, it's quite manageable.
+        By containerizing your app, setting ip NGINX as a reverse proxy, and linking everything together or 
+        your VPS, you gain full control over your deployment process.
+     </p>
+
+    <hr/>
+    <b><p>Top comments (0)</p></b>
+    <table>
+        <tr>
+            <td valign="top"><img src="assets/images/Desain tanpa judul (10).png" width="32" height="32"></td>
+            <td>
+                <textarea rows="3" cols="40" placeholder="Add to the discussion"></textarea>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
