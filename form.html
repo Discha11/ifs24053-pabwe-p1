@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Formulir Pendaftaran Akun Pengguna">
     <title>Form Pendaftaran Akun</title>
 </head>
+
 <body>
 
+    <!-- Navigasi Utama -->
     <nav>
         <a href="index.html">IMDb</a> |
         <a href="blog.html">Dev Blogs</a> |
+        <a href="blog-detail.html">Blog Detail</a> |
         <a href="form.html">Register</a> |
         <a href="cv.html">CV</a>
     </nav>
@@ -18,22 +22,27 @@
     <main>
         <h1>Daftar Akun</h1>
 
+        <!-- Form Pendaftaran -->
         <form action="#" method="POST">
             <fieldset>
                 <legend>Daftar Akun</legend>
 
                 <p>
-                    <label for="nama_lengkap">Nama Lengkap:</label>
-                    <input type="text" id="nama_lengkap" name="nama_lengkap" required>
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" required>
                 </p>
                 <hr>
 
                 <p>
                     Jenis Kelamin:
-                    <input type="radio" id="gender_laki" name="jenis_kelamin" value="Laki-Laki" required>
-                    <label for="gender_laki">Laki-Laki</label>
-                    <input type="radio" id="gender_perempuan" name="jenis_kelamin" value="Perempuan">
-                    <label for="gender_perempuan">Perempuan</label>
+                    <label>
+                        <input type="radio" name="jenis_kelamin" value="laki-laki" required>
+                        Laki-laki
+                    </label>
+                    <label>
+                        <input type="radio" name="jenis_kelamin" value="perempuan">
+                        Perempuan
+                    </label>
                 </p>
                 <hr>
 
@@ -65,34 +74,44 @@
 
                 <p>
                     Hobi:
-                    <input type="checkbox" id="hobi_olahraga" name="hobi" value="Olahraga">
-                    <label for="hobi_olahraga">Olahraga</label>
-                    <input type="checkbox" id="hobi_membaca" name="hobi" value="Membaca">
-                    <label for="hobi_membaca">Membaca</label>
-                    <input type="checkbox" id="hobi_ngoding" name="hobi" value="Ngoding">
-                    <label for="hobi_ngoding">Ngoding</label>
+                    <label>
+                        <input type="checkbox" name="hobi" value="olahraga">
+                        Olahraga
+                    </label>
+                    <label>
+                        <input type="checkbox" name="hobi" value="membaca">
+                        Membaca
+                    </label>
+                    <label>
+                        <input type="checkbox" name="hobi" value="ngoding">
+                        Ngoding
+                    </label>
                 </p>
                 <hr>
 
                 <p>
-                    <label for="kata_sandi">Password:</label>
-                    <input type="password" id="kata_sandi" name="kata_sandi" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
                 </p>
                 <hr>
 
                 <p>
-                    <input type="checkbox" id="persetujuan" name="persetujuan" required>
-                    <label for="persetujuan">Dengan mendaftar saya setuju dengan Ketentuan dan Kebijakan Privasi Aplikasi.</label>
+                    <label>
+                        <input type="checkbox" name="persetujuan" required>
+                        Dengan mendaftar saya setuju dengan Ketentuan dan Kebijakan Privasi Aplikasi.
+                    </label>
                 </p>
                 <hr>
 
+                <!-- Tombol Form Sesuai Spesifikasi -->
                 <p>
-                    <button type="reset">Reset</button>
-                    <button type="submit">Submit</button>
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
                 </p>
             </fieldset>
         </form>
     </main>
 
 </body>
+
 </html>
