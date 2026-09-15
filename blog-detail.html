@@ -21,37 +21,39 @@
 
     <main>
         <!-- Cover Blog -->
-        <img src="assets/images/docker.jpg" width="100%" alt="Cover Docker and NGINX">
+        <img src="assets/images/docker.jpg" width="100%" alt="Cover Docker and NGINX" />
 
         <!-- Author Info -->
         <table>
-            <tr>
-                <td>
-                    <img 
-                        src="assets/images/vishnu.jpg" 
-                        width="32" 
-                        height="32" 
-                        alt="Foto Profil Vishnu Satheesh">
-                </td>
-                <td>
-                    <p>
-                        <b>Vishnu Satheesh</b><br>
-                        <span>Posted on May 31</span>
-                    </p>
-                </td>
-            </tr>
+            <tbody>
+                <tr>
+                    <td>
+                        <img 
+                            src="assets/images/vishnu.jpg" 
+                            alt="Foto Profil Vishnu Satheesh" 
+                            width="32" 
+                            height="32" />
+                    </td>
+                    <td>
+                        <p>
+                            <b>Vishnu Satheesh</b><br />
+                            <span>Posted on May 31</span>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
         </table>
 
-        <!-- Judul Artikel -->
+        <!-- Judul Artikel dan Garis Pemisah -->
         <h1>How to Deploy a Web Application Using Docker and NGINX on Your Own Server</h1>
-        <hr>
+        <hr />
 
         <p>
             <span>#webdev</span>&nbsp;&nbsp;
             <span>#devops</span>
         </p>
 
-        <!-- Isi Artikel -->
+        <!-- Isi Konten Blog -->
         <p>
             Deploying a web application doesn't need to be a complicated process. With Docker, NGINX, and your own server, you can get your app live in no time.
         </p>
@@ -90,31 +92,33 @@ CMD [ "npm", "start" ]</code></pre>
             By containerizing your app, setting up NGINX as a reverse proxy, and linking everything together on your VPS, you gain full control over your deployment process.
         </p>
 
-        <hr>
+        <hr />
 
         <!-- Bagian Komentar -->
         <h2>Top comments (0)</h2>
 
         <form action="#" method="POST">
             <table>
-                <tr>
-                    <td>
-                        <img 
-                            src="assets/images/Desain tanpa judul (10).png" 
-                            width="32" 
-                            height="32" 
-                            alt="Avatar Pengguna">
-                    </td>
-                    <td>
-                        <label for="comment-box">Add to the discussion</label><br>
-                        <textarea 
-                            id="comment-box"
-                            name="comment" 
-                            rows="3" 
-                            cols="50" 
-                            placeholder="Add to the discussion"></textarea>
-                    </td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img 
+                                src="assets/images/avatar-default.png" 
+                                alt="Avatar Pengguna" 
+                                width="32" 
+                                height="32" />
+                        </td>
+                        <td>
+                            <label for="comment-box">Add to the discussion</label><br />
+                            <textarea 
+                                id="comment-box"
+                                name="comment" 
+                                rows="3" 
+                                cols="50" 
+                                placeholder="Add to the discussion"></textarea>
+                        </td>
+                    </tr>
+                </tbody>
             </table>
         </form>
     </main>
