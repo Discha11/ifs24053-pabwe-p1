@@ -1,101 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
     <title>Form Pendaftaran</title>
 </head>
 <body>
-    <p>
-        <a href="index.html">IMDb</a> &nbsp; | &nbsp; 
-        <a href="blog.html">Blog</a> &nbsp; | &nbsp; 
-        <a href="form.html">Pendaftaran</a> &nbsp; | &nbsp; 
-        <a href="cv.html">CV</a>
-    </p>
-    <hr>
+    <header>
+        <nav aria-label="Menu Utama">
+            <p>
+                <a href="index.html">IMDb</a> &nbsp; | &nbsp; 
+                <a href="blog.html">Blog</a> &nbsp; | &nbsp; 
+                <a href="form.html">Pendaftaran</a> &nbsp; | &nbsp; 
+                <a href="cv.html">CV</a>
+            </p>
+        </nav>
+        <hr>
+    </header>
 
-    <fieldset>
-        <legend>Daftar Akun</legend>
-        <table border="0" width="100%"></table>
-            <tr>
-                <td>Nama Lengkap:</td>
-                <td><input type="text"></td>
-            </tr>   
-            <tr>
-                <td colspan="2"><hr></td>
-            </tr>
-            <tr>
-                <td>Jenis Kelamin:</td>
-                <td>
-                    <input type="radio" name="jk"> Laki-Laki
-                    <input type="radio" name="jk"> Perempuan
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2"><hr></td>
-            </tr>
-        
-            <tr>
-                <td>Tempat Lahir:</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>Tanggal Lahir:</td>
-                <td><input type="date"></td>
-            </tr>
-            <tr>
-                <td colspan="2"><hr></td>
-            </tr>
-            <tr>
-                <td>Agama:</td>
-                <td> 
-                    <select>
-                        <option>--- Pilih Agama ---</option>
-                        <option>Islam</option>
-                        <option>Katolik</option>
-                        <option>Protestan</option>
-                        <option>Hindu</option>
-                        <option>Buddha</option>
-                        <option>Konghucu</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2"><hr></td>
-            </tr>
-            <tr>
-                <td>Hobi:</td>
-                <td>
-                    <input type="checkbox"> Olahraga
-                    <input type="checkbox"> Membaca
-                    <input type="checkbox"> Ngoding
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2"><hr></td>
-            </tr>
-            <tr>
-                <td>Password:</td>
-                <td><input type="password"></td>
-            </tr>
+    <main role="main">
+        <h1>Form Pendaftaran</h1>
 
-            <tr>
-                <td colspan="2"><hr></td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <input type="checkbox"> Dengan mendaftar saya setuju dengan Ketentuan Aplikasi.
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2"><hr></td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <input type="reset" value="Reset">
-                    <input type="submit" value="Submit">
-                </td>
-            </tr>
+        <fieldset>
+            <legend>Daftar Akun</legend>
+            <table border="0" width="100%">
+                <tr>
+                    <td><label for="nama">Nama Lengkap:</label></td>
+                    <td><input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap"></td>
+                </tr>   
+                <tr>
+                    <td colspan="2"><hr></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin:</td>
+                    <td>
+                        <input type="radio" name="jk" id="jk_laki" value="Laki-Laki">
+                        <label for="jk_laki">Laki-Laki</label>
+                        <input type="radio" name="jk" id="jk_perempuan" value="Perempuan">
+                        <label for="jk_perempuan">Perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><hr></td>
+                </tr>
             
-        </table>
-    </fieldset>
+                <tr>
+                    <td><label for="tempat_lahir">Tempat Lahir:</label></td>
+                    <td><input type="text" id="tempat_lahir" name="tempat_lahir" placeholder="Masukkan tempat lahir"></td>
+                </tr>
+                <tr>
+                    <td><label for="tanggal_lahir">Tanggal Lahir:</label></td>
+                    <td><input type="date" id="tanggal_lahir" name="tanggal_lahir"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><hr></td>
+                </tr>
+                <tr>
+                    <td><label for="agama">Agama:</label></td>
+                    <td> 
+                        <select id="agama" name="agama" aria-label="Agama">
+                            <option value="">--- Pilih Agama ---</option>
+                            <option value="Islam">Islam</option>
+                            <option value="Katolik">Katolik</option>
+                            <option value="Protestan">Protestan</option>
+                            <option value="Hindu">Hindu</option>
+                            <option value="Buddha">Buddha</option>
+                            <option value="Konghucu">Konghucu</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><hr></td>
+                </tr>
+                <tr>
+                    <td>Hobi:</td>
+                    <td>
+                        <input type="checkbox" name="hobi" id="hobi_olahraga" value="Olahraga">
+                        <label for="hobi_olahraga">Olahraga</label>
+                        <input type="checkbox" name="hobi" id="hobi_membaca" value="Membaca">
+                        <label for="hobi_membaca">Membaca</label>
+                        <input type="checkbox" name="hobi" id="hobi_ngoding" value="Ngoding">
+                        <label for="hobi_ngoding">Ngoding</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><hr></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" placeholder="Masukkan password"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><hr></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" name="setuju" id="setuju">
+                        <label for="setuju">Dengan mendaftar saya setuju dengan Ketentuan Aplikasi.</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><hr></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="reset" value="Reset">
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+                
+            </table>
+        </fieldset>
+    </main>
 </body>
 </html>
